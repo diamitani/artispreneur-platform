@@ -98,7 +98,7 @@ footer p{font-size:12px;color:var(--text-dim)}
       <img src="logo.png" alt="A" style="height:20px">
       <span>Artis<span class="gold">preneur</span></span>
     </div>
-    <a href="https://artispreneur-landing.vercel.app/signup.html" class="btn btn-gold" style="font-size:13px;padding:8px 18px">Get Started Free</a>
+    <a href="signup.html" class="btn btn-gold" style="font-size:13px;padding:8px 18px">Get Started Free</a>
   </div>
 </nav>
 
@@ -107,7 +107,7 @@ footer p{font-size:12px;color:var(--text-dim)}
     <div class="hero-badge"><span class="dot"></span> For independent musicians</div>
     <h1>You make the <em>music.</em><br>We handle the <em>rest.</em></h1>
     <p>Artispreneur takes care of the boring business stuff — royalties, playlists, contracts, taxes — so you can focus on what matters.</p>
-    <a href="https://artispreneur-landing.vercel.app/signup.html" class="btn btn-gold" style="font-size:15px;padding:14px 30px">Start for free →</a>
+    <a href="signup.html" class="btn btn-gold" style="font-size:15px;padding:14px 30px">Start for free →</a>
 
     <div class="hero-chat">
       <div class="hero-chat-header">💬 Ask anything about your music career</div>
@@ -223,7 +223,7 @@ footer p{font-size:12px;color:var(--text-dim)}
 <section class="cta-section">
   <h2>Ready to <span>stop guessing</span>?</h2>
   <p>Thousands of independent artists are already managing their careers with Artispreneur. Join them.</p>
-  <a href="https://artispreneur-landing.vercel.app/signup.html" class="btn btn-gold" style="font-size:16px;padding:16px 36px">Start for free →</a>
+  <a href="signup.html" class="btn btn-gold" style="font-size:16px;padding:16px 36px">Start for free →</a>
 </section>
 
 <footer>
@@ -267,7 +267,7 @@ function showPath(idx, el) {
   document.getElementById('stageResult').style.display = 'block';
   document.getElementById('stageTitle').textContent = p.title;
   document.getElementById('stageDesc').textContent = p.desc;
-  document.getElementById('stagePath').innerHTML = p.steps.map(s => '<a href="https://artispreneur-landing.vercel.app/signup.html" class="btn btn-outline">'+s+'</a>').join('');
+  document.getElementById('stagePath').innerHTML = p.steps.map(s => '<a href="signup.html" class="btn btn-outline">'+s+'</a>').join('');
   document.getElementById('stageResult').scrollIntoView({behavior:'smooth'});
 }
 
@@ -280,10 +280,10 @@ function sendChat() {
   input.value = '';
   body.scrollTop = body.scrollHeight;
   const low = msg.toLowerCase();
-  let resp = "Great question! Most artists don't know this stuff, and that's totally normal. When you sign up, our agents walk you through everything step by step. Want to <a href='https://artispreneur-landing.vercel.app/signup.html' style='color:var(--gold)'>get started</a>?";
-  if (low.includes('pro')||low.includes('royal')) resp = "A PRO (Performing Rights Organization) collects money for you whenever your music is played — radio, venues, streaming. Our PRO Agent sets this up in about 5 minutes. <a href='https://artispreneur-landing.vercel.app/signup.html' style='color:var(--gold)'>Get registered →</a>";
-  if (low.includes('playlist')||low.includes('spotify')) resp = "Getting on playlists is one of the best ways to grow. Our Distribution Agent finds playlists that match your sound and submits your music automatically. <a href='https://artispreneur-landing.vercel.app/signup.html' style='color:var(--gold)'>Get started →</a>";
-  if (low.includes('llc')||low.includes('business')||low.includes('tax')) resp = "Setting up your business properly protects your money and your music. Our Legal Agent handles LLC formation, EIN registration, and contracts. No lawyer needed. <a href='https://artispreneur-landing.vercel.app/signup.html' style='color:var(--gold)'>Get set up →</a>";
+  let resp = "Great question! Most artists don't know this stuff, and that's totally normal. When you sign up, our agents walk you through everything step by step. Want to <a href='signup.html' style='color:var(--gold)'>get started</a>?";
+  if (low.includes('pro')||low.includes('royal')) resp = "A PRO (Performing Rights Organization) collects money for you whenever your music is played — radio, venues, streaming. Our PRO Agent sets this up in about 5 minutes. <a href='signup.html' style='color:var(--gold)'>Get registered →</a>";
+  if (low.includes('playlist')||low.includes('spotify')) resp = "Getting on playlists is one of the best ways to grow. Our Distribution Agent finds playlists that match your sound and submits your music automatically. <a href='signup.html' style='color:var(--gold)'>Get started →</a>";
+  if (low.includes('llc')||low.includes('business')||low.includes('tax')) resp = "Setting up your business properly protects your money and your music. Our Legal Agent handles LLC formation, EIN registration, and contracts. No lawyer needed. <a href='signup.html' style='color:var(--gold)'>Get set up →</a>";
   setTimeout(() => {
     body.innerHTML += '<div class="chat-msg agent">'+resp+'</div>';
     body.scrollTop = body.scrollHeight;
